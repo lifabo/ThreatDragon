@@ -147,6 +147,19 @@
                   "new": false,
                   "number": 125,
                   "score": "44"
+                },
+                {
+                  "id": "d63a1107-da40-4984-9a44-b0ea5c8f3082",
+                  "title": "New generic threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Schwachstellen ausnutzen um höhere Rechte zu erlangen\nAngriffsvektor: Schwachstellen in der Software ausnutzen\nCAPEC: 233 Privelege escalation\nAttack: Abuse Elevation Control Mechanism, Technique T1548",
+                  "mitigation": "D3-SCP\nSystem Configuration Permissions\nrestrict access to configuration modifications to a specific user or group of users",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 130,
+                  "score": "27"
                 }
               ],
               "hasOpenThreats": true
@@ -166,8 +179,8 @@
                 "text": "2-Faktor-Authe\nntifizierungsdi\nenst"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -182,8 +195,22 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "threats": [],
-              "hasOpenThreats": false,
+              "threats": [
+                {
+                  "id": "c4af3733-ef1a-4a81-8e0e-46f8da1425fd",
+                  "title": "New generic threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Angreifer kann OTTs abfangen\nCAPEC-593: Session Hijacking\nBrowser Session Hijacking, Technique T1185\nangriffsvektor: Man in the middle attack",
+                  "mitigation": "d3-MENCR\nmessage encryption\nencrypt message body with cryptographic key",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 133,
+                  "score": "24"
+                }
+              ],
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "protocol": "",
               "isEncrypted": false,
@@ -1827,6 +1854,19 @@
                   "new": false,
                   "number": 107,
                   "score": "44"
+                },
+                {
+                  "id": "8cf1b697-a5b2-4a38-8091-1edf89a20104",
+                  "title": "New generic threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Ein Angreifer kann abstreiten, dass er eine bestimmte Sache gemacht hat, da nicht ausreichende Logs zur Verfügung stehen\nAngriffsvektor: Fehlen von Audit Logs\nCAPEC-ID:  268 audit log manipulation\nAttack: t1561: disk wipe or corrupt data",
+                  "mitigation": "d3fim\nfile integrity monitoring\ndetect suspicious changes to files",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 132,
+                  "score": "11"
                 }
               ],
               "hasOpenThreats": true,
@@ -1997,7 +2037,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 10,
-    "threatTop": 127
+    "threatTop": 134
   },
   "version": "2.1.1"
 }
