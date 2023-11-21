@@ -1930,8 +1930,8 @@
                 "text": "Report \nMailing\nService"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1946,8 +1946,22 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "5e70a742-6eaa-4276-8b5b-cf30f54abb96",
+                  "title": "New generic threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "es wird der falsche report mit der richtigen signatur an das management geschickt\nangriffsvektor: schwachstelle in der api\nCAPEC-384: application api manipulation\nattack t1565.002: Transmitted Data Manipulation",
+                  "mitigation": "d3fim\nfile integritary monitoring\n",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 135,
+                  "score": "11"
+                }
+              ]
             }
           },
           {
@@ -2037,7 +2051,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 10,
-    "threatTop": 134
+    "threatTop": 135
   },
   "version": "2.1.1"
 }
